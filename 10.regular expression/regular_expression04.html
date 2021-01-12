@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var xi = /a/;
+        alert( "Abcde".match(xi) ); //null 출력
+
+        var oi = /a/i;
+        alert( "Abcde".match(oi) ); //A 출력
+
+        var xg = /a/;
+        alert( "abcdea".match(xg) );    //a 출력
+
+        var og = /a/g;
+        alert( "abcdea".match(og) );    //a,a 출력
+
+        var ig = /a/ig;
+        alert( "AabcdAa".match(ig) );   //A,a,A,a
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

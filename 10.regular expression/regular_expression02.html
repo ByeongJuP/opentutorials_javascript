@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <title>Document</title>
+    <script>
+        //정규 표현식 메소드
+        
+        var pattern = /a/;
+        alert( pattern.exec('abcde') );     //a 출력
+
+        var pattern = /a./;
+        alert( pattern.exec('abcde') );     //ab 출력
+
+        var pattern = /a/;
+        alert( pattern.exec('bcdef') );     //null 출력
+
+        var pattern = /a/;
+        alert( pattern.test('acdef') );     //true 출력
+        alert( pattern.test('bcdef') );     //false 출력
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

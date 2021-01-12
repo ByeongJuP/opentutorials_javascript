@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+</head>
+<body>
+    <ul id="list">
+        <li>empty</li>
+        <li>empty</li>
+        <li>empty</li>
+        <li>empty</li>
+    </ul>
+    <input type="button" value="execute" id="execute_btn"/>
+    <script type="text/javascript">
+        //jQuery는 $를 사용한다.
+        $("#execute_btn").click(function(){
+            $("#list li").text('coding everybody');  
+                //id가 list인 태그의 하위 li태그에 coding everybody의 값을 입력한다.
+        })
+    </script>
+</body>
+</html>
