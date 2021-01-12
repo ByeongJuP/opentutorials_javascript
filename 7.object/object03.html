@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var grades = {
+            'list' : {'Math' : 100, 'Science' : 90, 'Korean' : 95 }
+            , 'show' : function(){
+                alert('Hello world');
+            }
+        }
+
+        alert("list : "+grades['list']);           //[object Object] 출력
+        alert("math : "+grades['list']['Math']);   //100출력
+        alert("show : "+grades['show']() );        //Hello world 출력
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

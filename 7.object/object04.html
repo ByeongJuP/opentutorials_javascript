@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var grades = {
+            'list' : {'Math' : 100, 'Science' : 90, 'Korean' : 95 }
+            , 'show' : function(){
+                for(var name in this.list){
+                    console.log(name, this.list[name]);
+                }
+            }
+        }
+
+        grades.show();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

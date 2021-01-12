@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var li = ['a', 'b', 'c', 'd', 'e'];
+
+        li.push('f');
+        alert(li);
+            //a, b, c, d, e, f출력
+
+        li = li.concat('g', 'h');
+        alert(li);
+            //a, b, c, d, e, f, g, h 출력
+
+        li.unshift('z');
+        alert(li);
+            //z, a, b, c, d, e, f, g, h 출력
+
+        var li2 = ['a', 'b', 'c', 'd'];
+        li2.splice(1, 1, 'x', 'y', 'z');
+        alert(li2);
+            //a, x, y, z, c, d 출력
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
