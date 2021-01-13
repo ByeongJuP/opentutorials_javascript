@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //전역변수(global)
+        var vscope = 'global';
+
+        function fscope(){
+            alert(vscope);
+            //변수 vscope에 접근할 수 있다.
+
+            //지역변수(local)
+            //함수 안에서만 접근이 가능하다.
+            var lv = 'local';
+            alert(lv);
+        }
+
+        function fscope2(){
+            alert(vscope);
+            alert(lv);
+        }
+        fscope();
+        fscope2();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
