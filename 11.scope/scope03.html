@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. 전역변수로 활용
+        var MYAPP = {}
+        MYAPP.calculator = {
+            'left' : null,
+            'right' : null
+        }
+        MYAPP.coordinate = {
+            'left' : null,
+            'right' : null
+        }
+
+        MYAPP.calculator.left = 10;
+        MYAPP.calculator.right = 20;
+        
+        function sum(){
+            return MYAPP.calculator.left + MYAPP.calculator.right;
+        }
+
+        document.write(sum());
+
+        //2. 지역변수로 활용(익명 함수로 활용)
+        (function (){
+            var MYAPP = {}
+            MYAPP.calculator = {
+                'left' : null,
+                'right' : null
+            }
+            MYAPP.coordinate = {
+                'left' : null,
+                'right' : null
+            }
+
+            MYAPP.calculator.left = 10;
+            MYAPP.calculator.right = 20;
+            
+            function sum(){
+                return MYAPP.calculator.left + MYAPP.calculator.right;
+            }
+
+            document.write(sum());
+        }() );
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

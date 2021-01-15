@@ -14,7 +14,7 @@
 
             //지역변수(local)
             //함수 안에서만 접근이 가능하다.
-            var lv = 'local';
+            var lv = 'local'; 
             alert(lv);
         }
 
@@ -24,6 +24,14 @@
         }
         fscope();
         fscope2();
+
+        var vscope = 'global';
+        function fscope3(){
+            var vscope = 'local';
+            vscope = 'local';
+        }
+        fscope3();
+        alert(vscope);  //global출력
     </script>
 </head>
 <body>
