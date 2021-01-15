@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function factory_movie(title){
+            return {
+                get_title : function(){
+                    //내부함수
+                    return title;
+                },
+                set_title : function(_title){
+                    //내부함수
+                    title = _title
+                }
+            }
+        }
+        ghost = factory_movie('Ghost in the shell');
+        matrix = factory_movie('Matrix');
+        alert(ghost.get_title());   //Ghost in the shell 출력
+        alert(matrix.get_title());  //Matrix 출력
+
+        ghost.set_title('공각기동대');
+        alert(ghost.get_title());   //공각기동대 출력
+        alert(matrix.get_title());  //Matrix출력
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
