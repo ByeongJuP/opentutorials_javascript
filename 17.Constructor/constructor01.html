@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var person = {};    //object
+        person.name = 'byeongju';
+            //object에 name이란 이름(property)으로 값 입력
+
+        //proerty에 함수담기  = method
+        person.introduce = function(){
+            return 'My name is '+this.name;
+            //this는 peron의 객체를 가르킨다
+        }
+
+        document.write(person.introduce());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Person(name){
+            this.name = name;
+            this.introduce = function(){
+                return 'My name is '+this.name;
+            }
+        }
+
+        var p1 = new Person('byeongju');
+        document.write(p1.introduce()+"</br>");
+
+        var p2 = new Person('gildong');
+        document.write(p2.introduce()+"</br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
