@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func(){
+            if( windonw === this ){
+                document.write("window === this");
+            }
+        }
+        func();     //window === this 출력
+
+        var o = {
+            func : function(){
+                if( 0 === this){
+                    documnet.write("o === this");
+                }
+            }
+        }
+
+        o.func();   // o === this 출력
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

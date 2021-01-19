@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        //함수 리터럴(Literal)
+        function sum(x,y){
+            return x+y;
+        }
+        sum(1,2);   //3
+
+        var sum2 = new Function('x', 'y', 'return x+y');
+        sum2(1,2);   //3
+
+        //객체 리터럴
+        var o = {}
+        var p = {}
+
+        function func(){
+            switch(this){
+                case o: 
+                    document.write("o<br/>");
+                    break;
+                case p:
+                    document.write("p<br/>");
+                    break;
+                case windwo:
+                    document.write('window<br/>');
+                    break;
+            }
+        }
+
+        func();         //window<br/>출력
+        func.apply(o);  //o<br/> 출력
+        func.apply(p);  //p<br/> 출력
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
