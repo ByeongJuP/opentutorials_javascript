@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function person(name){
+            this.name = name;
+        }
+
+        person.prototype.name = null;
+        person.prototype.introduce = function(){
+            return 'My name is '+this.name;
+        }
+        
+        function programmer(name){
+            this.name = name;
+        }
+
+        programmer.prototype = new person();
+        programmer.prototype.coding = function(){
+            return "hello world";
+        }
+
+        
+        function designer(name){
+            this.name = name;
+        }
+
+        designer.prototype = new person();
+        designer.prototype.design = function(){
+            return "hello design";
+        }
+
+        var p1 = new programmer('byeongJu');
+        var p2 = new designer('hongGilDong');
+        document.write("<br/>"+p1.introduce());
+        document.write("<br/>"+p1.coding());
+        document.write("<br/>"+p2.introduce());
+        document.write("<br/>"+p2.design());
+
+        
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
