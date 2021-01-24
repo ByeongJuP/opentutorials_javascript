@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Object.keys();
+        var arr = ["a", "b", "c"];
+        console.log("arr : "+arr);
+        console.log('Object.keys(arr) : '+Object.keys(arr));    //0, 1, 2
+
+        var arr2 = {"name" : "byeongju", "age":"30", "city":"anyang"};
+        console.log("arr2 : "+arr2);
+        console.log("Object.keys(arr2) : "+Object.keys(arr2) ); //name, age, city
+
+        //Object.prototype.toString()
+        var o = new Object();
+        console.log("o : "+o);  //[Object Object]
+        console.log("o.toString() : "+o.toString()); 
+
+        var a = new Array(1,2,3);
+        console.log("a : "+a);
+        console.log("a.toString() : "+a.toString()); //1,2,3
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

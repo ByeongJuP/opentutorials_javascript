@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        Object.prototype.contain = function(pick){
+            for(var name in this){
+                //this : 메소드가 소속되어 있는 객체
+                if( this[name] === pick){
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        var o = {"name":"byeongju", "city":"anyang"};
+        //console.log(o.contain("byeongju")); //contain안의 값이 존재하면 true 없으면 false반환
+        //console.log(o.contain("unknow"));
+
+        var a = ['apple', 'banana', 'cherry'];
+        //console.log(a.contain('apple'));
+
+        for(var name in o){
+            if(o.hasOwnProperty(name) ){
+                //hasOwnProperty는 true 또는 false가 반환된다.
+                console.log(name);
+            }            
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

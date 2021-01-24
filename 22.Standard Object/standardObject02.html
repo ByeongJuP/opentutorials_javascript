@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        Array.prototype.random = function(){
+            var index = Math.floor(this.length * Math.random());
+            return this[index];
+        }
+
+        var arr = new Array("seoul", "new york", "pusan", "tokyo");
+        console.log(arr.random());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
